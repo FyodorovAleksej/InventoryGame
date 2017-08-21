@@ -1,13 +1,13 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QObject>
+#include <QFile>
 #include "dbadapter.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    //QFile::copy(":/images/appleImage.jpg" , "./appleImage.jpg");
     QFile::copy(":/sound/appleSoundCut.mp3", "./appleSoundCut.mp3");
 
     DBAdapter* adapter = new DBAdapter();
