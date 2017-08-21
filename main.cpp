@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QObject>
-#include <QFile>
 #include "dbadapter.h"
 
 int main(int argc, char *argv[])
