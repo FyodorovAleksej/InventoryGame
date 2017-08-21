@@ -52,7 +52,3 @@ FORMS    += mainwindow.ui
 
 RESOURCES += \
     resources.qrc
-
-DISTFILES +=
-    appleImage.jpg
-    appleSound.mp3

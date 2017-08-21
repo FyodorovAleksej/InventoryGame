@@ -44,7 +44,7 @@ void DBAdapter::init()
     QSqlQuery* query = new QSqlQuery();
     query->exec("CREATE TABLE itemTable (picture VARCHAR(255), type VARCHAR(255) NOT NULL, sound VARCHAR(255), PRIMARY KEY(type))");
     query->exec("CREATE TABLE inventoryTable (id INTEGER PRIMARY KEY, count INTEGER, type VARCHAR(255), FOREIGN KEY(type) REFERENCES itemTable(type))");
-    query->exec("INSERT INTO itemTable (picture, type, sound) VALUES (\"./appleImage.jpg\", \"Apple\", \"./appleSoundCut.mp3\");");
+    query->exec("INSERT INTO itemTable (picture, type, sound) VALUES (\":/images/appleImage.jpg\", \"Apple\", \"./appleSoundCut.mp3\");");
 }
 
 QSqlQuery* DBAdapter::getConnection()
